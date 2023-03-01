@@ -1,6 +1,6 @@
 import { UserCircleIcon, LockClosedIcon } from "@heroicons/react/20/solid";
 import { useForm } from "react-hook-form";
-
+import { useRouter } from "next/router";
 
 const dashboard = () => {
   const {
@@ -9,11 +9,12 @@ const dashboard = () => {
     formState: { errors },
   } = useForm({});
 
+  const router = useRouter();
   //data is object to pass to API
-  const onSubmit = (data) => console.log(data);
-
-
-
+  const onSubmit = (data) => {
+    console.log(data);
+    router.push("/home");
+  };
 
   return (
     <div className="relative flex h-screen bg items-center">
@@ -26,6 +27,7 @@ const dashboard = () => {
               <div className="py-4 bg-transparent w-60">
                 <div className="relative w-full">
                   <input
+                    autoComplete="off"
                     type="text"
                     required
                     {...register("userName", { required: true })}
@@ -46,6 +48,7 @@ const dashboard = () => {
               <div className="py-4 bg-transparent w-60">
                 <div className="relative w-full">
                   <input
+                    autoComplete="off"
                     type="password"
                     required
                     {...register("password", { required: true })}
