@@ -19,18 +19,11 @@ import SillyInput from "../components/sillyInput";
 const main = () => {
   const apps = [
     { name: "Yeah", class: "ues" },
-    { name: "shit", class: "bfd" },
-    { name: "ass", class: "asdf" },
-    { name: "piss", class: "gf" },
-    { name: "Yeah", class: "ues" },
-    { name: "shit", class: "bfd" },
-    { name: "ass", class: "asdf" },
-    { name: "piss", class: "gf" },
+
   ];
 
   const [selected, setSelected] = useState(apps[0]);
-  const [yeah, setyeah] = useState("");
-  const [shit, setShit] = useState("");
+
   const [silly, setSilly] = useState("");
 
   return (
@@ -201,8 +194,7 @@ const main = () => {
           <SillyInput placeHolder={"Account"} value={silly} setVal={setSilly}>
             <UserCircleIcon />
           </SillyInput>
-          <InputV placeholder={"Yeah"} val={yeah} setVal={setyeah} />
-          <InputV val={shit} setVal={setShit} placeholder={"Nah"} />
+
           {/* <input type="submit" placeholder="submit" /> */}
           <button
             onClick={() => {

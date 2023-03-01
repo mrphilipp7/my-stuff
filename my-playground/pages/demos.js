@@ -23,7 +23,6 @@ const demos = () => {
     setSelected(e.target.value);
   };
 
-  //demo shit
   const rows = [
     { id: 1, col1: "Hello", col2: "World", col3: "asdf", col4: "fds" },
     {
@@ -37,12 +36,12 @@ const demos = () => {
     { id: 4, col1: "MUI", col2: "is Amazing" },
     { id: 5, col1: "MUI", col2: "is Amazing" },
     { id: 6, col1: "MUI", col2: "is Amazing" },
-    { id: 7, col1: "MUI", col2: "is shitty" },
+    { id: 7, col1: "MUI", col2: "is ehh" },
     { id: 8, col1: "MUI", col2: "is Amazing" },
     { id: 9, col1: "MUI", col2: "is Amazingz" },
     { id: 10, col1: "MUI", col2: "is Amazings" },
     { id: 11, col1: "MUI", col2: "is Amazing" },
-    { id: 12, col1: "MUI", col2: "is shitty" },
+    { id: 12, col1: "MUI", col2: "is ehh" },
   ];
 
   const columns = [
