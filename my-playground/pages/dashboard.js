@@ -1,6 +1,7 @@
 import { UserCircleIcon, LockClosedIcon } from "@heroicons/react/20/solid";
 import { useForm } from "react-hook-form";
 
+
 const dashboard = () => {
   const {
     register,
@@ -10,6 +11,9 @@ const dashboard = () => {
 
   //data is object to pass to API
   const onSubmit = (data) => console.log(data);
+
+
+
 
   return (
     <div className="relative flex h-screen bg items-center">
