@@ -1,6 +1,6 @@
 import { Transition } from "@headlessui/react";
 import { useState, useEffect } from "react";
-
+//add other cool stuff
 const Home = () => {
   const [isShowing, setIsShowing] = useState(false);
   useEffect(() => {
